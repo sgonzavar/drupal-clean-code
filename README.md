@@ -63,3 +63,30 @@ Some common tasks that can be handled by the init script (and other [custom comm
 This repo is intended for quick start demos and includes a hardcoded value for `hash_salt` in `settings.php`.
 If you are basing your project code base on this repo, make sure you regenerate and update the `hash_salt` value.
 A new value can be generated with `drush ev '$hash = Drupal\Component\Utility\Crypt::randomBytesBase64(55); print $hash . "\n";'`
+
+## Three Files
+
+Inside `src/`, we will create three main layers:
+- `Domain/`: Contains the entities and business rules.
+- `Application/`: Contains the use cases and application services.
+- `Infrastructure/`: Contains the concrete implementation, including Drupal modules.
+
+    ```
+    drupal-clean-code/
+    ├── .docksal/
+    ├── config/
+    ├── web/
+    │   ├── modules/
+    │   │   └── custom/
+    │   ├── themes/
+    │   │   └── custom/
+    │   └── sites/
+    ├── tests/
+    ├── src/
+    │   ├── Application/
+    │   ├── Domain/
+    │   └── Infrastructure/
+    ├── composer.json
+    └── .gitignore
+
+    ```
