@@ -41,3 +41,8 @@ design/
 ├── design.info.yml
 ├── design.libraries.yml
 └── design.theme
+
+ACTIVATE THEME
+--------------
+fin drush theme:enable design
+fin drush config-set system.theme default design

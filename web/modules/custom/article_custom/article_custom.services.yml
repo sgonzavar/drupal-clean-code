@@ -1,8 +1,8 @@
 services:
-  mi_modulo.article_repository:
+  article_custom.article_repository:
     class: clean_code\Infrastructure\Repository\DrupalArticleRepository
     arguments: ['@entity_type.manager']
 
-  mi_modulo.article_service:
+  article_custom.article_service:
     class: clean_code\Application\Service\ArticleService
     arguments: ['@article_custom.article_repository']

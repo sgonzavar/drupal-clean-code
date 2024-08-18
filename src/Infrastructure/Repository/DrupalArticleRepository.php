@@ -3,9 +3,10 @@
 namespace clean_code\Infrastructure\Repository;
 
 use clean_code\Domain\Entity\Article;
-use clean_code\Domain\Repository\ArticleRepositoryInterface;
+
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\node\Entity\Node;
+use clean_code\Domain\Repository\ArticleRepositoryInterface;
 
 class DrupalArticleRepository implements ArticleRepositoryInterface
 {

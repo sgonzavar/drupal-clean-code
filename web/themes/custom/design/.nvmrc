@@ -1,1 +1,39 @@
+
+Use to ----> lts/iron -> v20.16.0
+
+How to use.
+-----------
+
+1. Create a `.nvmrc` file in the root of your project with the version of Node.js
+  you want to use. For example, to use Node.js version 10.0.0, you would run:
+
+nvm list
+->    v12.22.12
+       v14.21.3
+       v16.20.2
+       v20.15.1
+       v20.16.0
+         system
+default -> v12 (-> v12.22.12)
+iojs -> N/A (default)
+unstable -> N/A (default)
+node -> stable (-> v20.16.0) (default)
+stable -> 20.16 (-> v20.16.0) (default)
+lts/* -> lts/iron (-> v20.16.0)
+lts/argon -> v4.9.1 (-> N/A)
+lts/boron -> v6.17.1 (-> N/A)
+lts/carbon -> v8.17.0 (-> N/A)
+lts/dubnium -> v10.24.1 (-> N/A)
+lts/erbium -> v12.22.12
+lts/fermium -> v14.21.3
+lts/gallium -> v16.20.2
+lts/hydrogen -> v18.20.4 (-> N/A)
 lts/iron -> v20.16.0
+
+nvm i lts/iron -> v20.16.0
+v20.16.0 is already installed.
+
+node --version
+v20.16.0
+
+

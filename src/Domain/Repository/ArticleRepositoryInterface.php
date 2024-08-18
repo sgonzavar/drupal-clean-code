@@ -1,6 +1,6 @@
 <?php
 
-namespace MiProyecto\Domain\Repository;
+namespace clean_code\Domain\Repository;
 
 use clean_code\Domain\Entity\Article;
 
