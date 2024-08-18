@@ -61,7 +61,8 @@ class DrupalArticleRepository implements ArticleRepositoryInterface
   {
     $query = $this->entityTypeManager->getStorage('node')->getQuery()
       ->condition('type', 'article')
-      ->sort('created', 'DESC');
+      ->sort('created', 'DESC')
+      ->accessCheck(FALSE);
     $nids = $query->execute();
     $nodes = $this->entityTypeManager->getStorage('node')->loadMultiple($nids);
 
