@@ -18,3 +18,32 @@ The `article_custom` module provides endpoints with basic CRUD functionalities (
 2. Enable the module using the following Drush command:
    ```bash
    drush en article_custom -y
+
+
+## Endpoints
+The module exposes the following RESTful endpoints:
+
+POST /api/article: Creates a new article.
+GET /api/article/{id}: Retrieves a specific article by its ID.
+GET /api/articles: Retrieves a list of all articles.
+PUT /api/article/{id}: Updates a specific article by its ID.
+DELETE /api/article/{id}: Deletes a specific article by its ID.
+
+## Usage
+### Creating an Article
+To create an article, send a POST request to /api/article with the required data in the request body.
+
+Retrieving Articles
+- To get a list of articles, send a GET request to /api/articles.
+- To get a specific article, send a GET request to /api/article/{id}.
+
+### Contributing
+If you'd like to contribute to the article_custom module, please follow these steps:
+
+Fork the repository.
+- Create a new branch with your feature or bug fix:
+  - git checkout -b feature/your-feature-name
+- Commit your changes:
+  - git commit -m "Add your commit message here"
+- Push to the branch:
+  - git push origin feature/your-feature-name
