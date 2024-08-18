@@ -1,0 +1,4 @@
+name: Article Custom
+type: module
+description: 'Implementation Clean Code for Article Content Type'
+core_version_requirement: ^9 || ^10

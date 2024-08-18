@@ -72,7 +72,7 @@ Inside `src/`, we will create three main layers:
 - `Infrastructure/`: Contains the concrete implementation, including Drupal modules.
 
     ```
-    drupal-clean-code/
+    clean_code/
     ├── .docksal/
     ├── config/
     ├── web/
