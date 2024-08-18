@@ -5,4 +5,4 @@ services:
 
   mi_modulo.article_service:
     class: clean_code\Application\Service\ArticleService
-    arguments: ['@mi_modulo.article_repository']
+    arguments: ['@article_custom.article_repository']

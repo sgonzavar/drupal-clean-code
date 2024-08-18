@@ -1,0 +1,15 @@
+{
+  "name": "design",
+  "version": "1.0.0",
+  "description": "custom theme",
+  "main": "index.js",
+  "author": "tiago",
+  "license": "MIT",
+  "scripts": {
+    "build:scss": "node-sass web/themes/custom/design/scss/style.scss web/themes/custom/design/css/style.css --output-style compressed",
+    "watch:scss": "npm run build:scss -- --watch"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

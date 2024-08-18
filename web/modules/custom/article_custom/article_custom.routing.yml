@@ -1,0 +1,39 @@
+article_custom.create_article:
+  path: '/api/articles'
+  defaults:
+    _controller: '\Drupal\article_custom\Controller\ArticleController::createArticle'
+  methods: [POST]
+  requirements:
+    _permission: 'access content'
+
+article_custom.get_article:
+  path: '/api/articles/{id}'
+  defaults:
+    _controller: '\Drupal\article_custom\Controller\ArticleController::getArticle'
+  methods: [GET]
+  requirements:
+    _permission: 'access content'
+
+article_custom.update_article:
+  path: '/api/articles/{id}'
+  defaults:
+    _controller: '\Drupal\article_custom\Controller\ArticleController::updateArticle'
+  methods: [PUT]
+  requirements:
+    _permission: 'access content'
+
+article_custom.delete_article:
+  path: '/api/articles/{id}'
+  defaults:
+    _controller: '\Drupal\article_custom\Controller\ArticleController::deleteArticle'
+  methods: [DELETE]
+  requirements:
+    _permission: 'access content'
+
+article_custom.list_articles:
+  path: '/api/articles'
+  defaults:
+    _controller: '\Drupal\article_custom\Controller\ArticleController::listArticles'
+  methods: [GET]
+  requirements:
+    _permission: 'access content'

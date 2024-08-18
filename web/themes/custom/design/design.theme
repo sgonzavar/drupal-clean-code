@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the Design theme.
+ */
+
+/**
+ * Implements hook_preprocess_HOOK() for html.html.twig.
+ */
+function design_preprocess_html(&$variables) {
+  // Add class to body.
+  $variables['attributes']['class'][] = 'design-theme';
+}

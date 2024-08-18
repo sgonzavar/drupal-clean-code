@@ -2,7 +2,7 @@
 
 namespace MiProyecto\Domain\Repository;
 
-use Drupal\Domain\Entity\Article;
+use clean_code\Domain\Entity\Article;
 
 interface ArticleRepositoryInterface
 {

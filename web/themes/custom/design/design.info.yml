@@ -1,0 +1,7 @@
+name: Design
+type: theme
+description: 'custom theme with SCSS'
+core_version_requirement: ^9 || ^10
+base theme: claro
+libraries:
+  - design/global-styling

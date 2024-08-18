@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#: exec_target = cli
+
+## Compile SCSS
+##
+## Usage: fin scss
+
+cd "${PROJECT_ROOT}/web/themes/custom/design"
+yarn run build:scss

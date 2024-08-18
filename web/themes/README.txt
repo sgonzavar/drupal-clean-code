@@ -29,3 +29,15 @@ MORE INFORMATION
 Refer to the "Appearance" section of the README.md in the Drupal root directory
 for further information on customizing the appearance of Drupal with custom
 themes.
+
+MAINTAINING A CUSTOM THEME
+--------------------------
+design/
+├── css/
+├── scss/
+│   └── style.scss
+├── js/
+├── templates/
+├── design.info.yml
+├── design.libraries.yml
+└── design.theme
