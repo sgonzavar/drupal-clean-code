@@ -1,0 +1,12 @@
+.dragging {
+  background-color: #f0f0f0;
+  opacity: 0.6;
+}
+
+tr {
+  transition: background-color 0.2s ease;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}

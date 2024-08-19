@@ -1,5 +1,8 @@
 react-app:
   js:
-    js/dist/bundle.js: {}
+    js/dist/articles-app.umd.js: { preprocess: false }
+  css:
+    theme:
+      js/dist/articles-app.css: {}
   dependencies:
     - core/drupalSettings
