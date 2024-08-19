@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains mi_modulo.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mi_modulo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.mi_modulo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Módulo personalizado para manejar contenido específico.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

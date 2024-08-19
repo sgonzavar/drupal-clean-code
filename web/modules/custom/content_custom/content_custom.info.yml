@@ -1,0 +1,10 @@
+name: Custom Content
+type: module
+description: 'Module for custom content types and fields.'
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:node
+  - drupal:taxonomy
+  - paragraphs:paragraphs
+libraries:
+  - content_custom/react-app

@@ -1,0 +1,8 @@
+services:
+  mi_modulo.article_repository:
+    class: Drupal\content_custom\Infrastructure\Repository\DrupalArticleRepository
+    arguments: ['@entity_type.manager']
+
+  mi_modulo.article_service:
+    class: Drupal\content_custom\Application\Service\ArticleService
+    arguments: ['@mi_modulo.article_repository']

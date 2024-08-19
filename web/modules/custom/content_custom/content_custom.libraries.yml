@@ -1,0 +1,5 @@
+react-app:
+  js:
+    js/dist/bundle.js: {}
+  dependencies:
+    - core/drupalSettings

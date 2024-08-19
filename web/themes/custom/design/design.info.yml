@@ -2,6 +2,6 @@ name: Design
 type: theme
 description: 'custom theme with SCSS'
 core_version_requirement: ^9 || ^10
-base theme: claro
+base theme: gin
 libraries:
   - design/global-styling

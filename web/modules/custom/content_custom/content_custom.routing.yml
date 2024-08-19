@@ -1,0 +1,23 @@
+content_custom.list_articles:
+  path: '/api/articles'
+  defaults:
+    _controller: '\Drupal\mi_modulo\Controller\ArticleController::listArticles'
+    _title: 'List Articles'
+  requirements:
+    _permission: 'access content'
+
+content_custom.get_article:
+  path: '/api/articles/{id}'
+  defaults:
+    _controller: '\Drupal\mi_modulo\Controller\ArticleController::getArticle'
+    _title: 'Get Article'
+  requirements:
+    _permission: 'access content'
+
+content_custom.react_page:
+  path: '/articles-table'
+  defaults:
+    _controller: '\Drupal\mi_modulo\Controller\ReactController::content'
+    _title: 'Articles Table'
+  requirements:
+    _permission: 'access content'
